@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import SocialPill from "../components/icons/SocialPill.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, soy Oscar <a
+          href="https://www.linkedin.com/in/oscar-alejandro-meza-avenda%C3%B1o-b0b771118/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+        <h2 class="text-2xl text-wrap">
+          <span>+15 años de experiencia.</span>
+          <span class="text-yellow-200/90"
+            >Desarrollador web y Creador de Contenido.</span
+          >
+          <span class="text-red-200/90">De Barcelona, España.</span>
+          <span class="opacity-75"
+            >Especializado en crear aplicaciones únicas.</span
+          >
+        </h2>
+
+        <nav class="flex gap-x-2 mt-8">
+          <SocialPill
+            href="https://www.linkedin.com/in/oscar-alejandro-meza-avenda%C3%B1o-b0b771118/"
+          >
+            <LinkedInIcon class="w-6 h-6" />
+             LinkedIn
+          </SocialPill>
+          <SocialPill href="https://github.com/OscarMezaAv29">
+            <GitHubIcon class="w-6 h-6" />
+             GitHub
+          </SocialPill>
+        </nav>
+      </h1>
+    </section>
+  </main>
+</Layout>
