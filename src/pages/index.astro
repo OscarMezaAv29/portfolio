@@ -4,13 +4,16 @@ import Badge from "../components/Badge.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import SocialPill from "../components/SocialPill.astro";
 import GithubIcon from "../components/icons/Github.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
 ---
 
 <Layout title="Portafolio de Oscar Meza - Desarrollador y Programador Web">
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44 pb-24">
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="https://avatars.githubusercontent.com/u/65206357?v=4"
         alt="oscar photo"
       />
@@ -34,14 +37,21 @@ import GithubIcon from "../components/icons/Github.astro";
       </h2>
       <nav class="flex gap-x-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/oscar-alejandro-meza-avenda%C3%B1o-b0b771118/">
-          <LinkedInIcon class="w-6 h-6" />
+          <LinkedInIcon class="size-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/OscarMezaAv29">
-          <GithubIcon class="w-6 h-6" />
+          <GithubIcon class="size-6" />
           GitHub
         </SocialPill>
        </nav>
-    </section>
+    </SectionContainer>
+	<SectionContainer>
+		<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+			<Briefcase class="size-7"/>
+			Experiencia Laboral
+		</h2>
+		<Experience />
+	</SectionContainer>
   </main>
 </Layout>
